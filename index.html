@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Task | Productivity Portal</title>
+    <link rel="stylesheet" href="todooo.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon"><i data-lucide="sparkles"></i></div>
+                <span>Nova <b>Task</b></span>
+            </div>
+            <button id="exportBtn" class="export-btn">
+                <i data-lucide="download"></i> Export PDF
+            </button>
+        </nav>
+
+        <main class="layout">
+            <section class="content">
+                <header class="hero">
+                    <h1>Nova Workspace</h1>
+                    <p>Illuminating your daily missions 🌟</p>
+                </header>
+
+                <div class="input-card">
+                    <input type="text" id="taskInput" placeholder="Enter your next mission...">
+                    <input type="date" id="dateInput">
+                    <button id="addBtn">Add Task</button>
+                </div>
+
+                <div id="taskList" class="tasks-wrapper">
+                    </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="stats-card">
+                    <div class="progress-glow">
+                        <span id="percentText">0%</span>
+                    </div>
+                    <div class="stats-info">
+                        <div class="stat-box">
+                            <span class="label">In Progress</span>
+                            <span id="pendingCount" class="val">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="label">Completed</span>
+                            <span id="doneCount" class="val">0</span>
+                        </div>
+                    </div>
+                    <p class="quote">"Great things are done by a series of small acts."</p>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
