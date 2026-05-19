@@ -28,4 +28,4 @@ The UI is built on a deep cosmic palette to reduce eye strain and enhance focus:
 ## 🛸 Quick Start
 1. **Clone the Galaxy:**
    ```bash
-   git clone https://github.com/sofia888u/nova-task.git
+   https://sofia888u.github.io/nova-task/
