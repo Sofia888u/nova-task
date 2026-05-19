@@ -3,8 +3,8 @@
 **Nova Task** is a sleek, celestial-themed task management dashboard designed for deep focus and high-performance organization. It features a stunning dark interface inspired by the **infinite depths of space**.
 <img width="1863" height="937" alt="image" src="https://github.com/user-attachments/assets/8db9c642-0ebc-4b5c-91da-1ec2b3595afc" />
 screenshot
-
-🌍 **[Live Demo: Click here to explore Nova Task](https://sofia888u.github.io/nova-task/)**
+**Markdown**
+ **[Live Demo: Click here to explore Nova Task] (https://sofia888u.github.io/nova-task/)**
 
 ---
 
