@@ -10,10 +10,10 @@ function renderTasks() {
         item.innerHTML = `
             <input type="checkbox" ${task.completed ? 'checked' : ''} onchange="toggleTask(${i})">
             <div style="flex:1; ${task.completed ? 'opacity:0.4; text-decoration:line-through' : ''}">
-                <div style="font-weight: 600; font-size: 1.1rem">${task.text}</div>
-                <small style="color: var(--nova-blue)">${task.date || 'No Deadline'}</small>
+                <div style="font-weight: 600; font-size: 1.1rem; color: var(--text-white);">${task.text}</div>
+                <small style="color: var(--text-muted); margin-top: 5px; display: block;">${task.date || 'No Deadline'}</small>
             </div>
-            <i data-lucide="trash-2" onclick="deleteTask(${index})" style="cursor:pointer; color: #ff6b6b; width: 20px;"></i>
+            <i data-lucide="trash-2" onclick="deleteTask(${i})" class="delete-icon"></i>
         `;
         list.appendChild(item);
     });
@@ -64,12 +64,28 @@ function updateStatistics() {
     document.getElementById('pendingCount').innerText = total - done;
 }
 
-// Fixed PDF Export Function
+// telicharje lay9onat
+lucide.createIcons();
+
+// Enter bach nzid lmaham
+document.getElementById('taskInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        addTask();
+    }
+});
+
+// bach nkhrj pdf
 document.getElementById('exportBtn').onclick = () => {
+    if(tasks.length === 0) {
+        alert("Add some tasks first before exporting!");
+        return;
+    }
+
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     
     doc.setFontSize(22);
+    // color dyal pdf ofc purple 
     doc.setTextColor(77, 18, 80);
     doc.text("Nova Task - Daily Report", 14, 20);
     
