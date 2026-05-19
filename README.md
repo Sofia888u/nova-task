@@ -4,6 +4,7 @@
 <img width="1863" height="937" alt="image" src="https://github.com/user-attachments/assets/8db9c642-0ebc-4b5c-91da-1ec2b3595afc" />
 screenshot
 
+🌍 **[Live Demo: Click here to explore Nova Task](https://sofia888u.github.io/nova-task/)**
 
 ---
 
@@ -25,7 +26,3 @@ The UI is built on a deep cosmic palette to reduce eye strain and enhance focus:
 - **Iconography**: [Lucide Icons](https://lucide.dev/).
 - **Engine**: [jsPDF](https://github.com/parallax/jsPDF) for dynamic document generation.
 
-## 🛸 Quick Start
-1. **Clone the Galaxy:**
-   ```bash
-   **[Live Demo: Click here to explore Nova Task](https://sofia888u.github.io/nova-task/)**
